@@ -82,6 +82,14 @@ export default function App() {
         <MinutesCircle
           totalSeconds={currentTimer.minutes}
           secondsLeft={timeLeft}
+          isRunning={isRunning}
+          timerType={
+            currentTimer.minutes === 25
+              ? "long"
+              : currentTimer.minutes === 5
+              ? "short"
+              : "medium"
+          }
         />
         <BigButtonDot
           color={currentTimer.color}
