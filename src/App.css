@@ -9,6 +9,7 @@
   min-width: 100vw;
   padding: 0;
   background: #000;
+  position: relative;
 }
 
 /* Timer Wrapper - Scales based on viewport, tight around content */
@@ -197,14 +198,16 @@
 
 /* ===== FOOTER STYLES ===== */
 .app-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  margin-top: 10px;
   text-align: center;
-  font-size: 10px;
-  color: #666;
+  z-index: 10;
 }
 
 .footer-title {
@@ -212,23 +215,23 @@
   font-weight: bold;
   letter-spacing: 1px;
   margin: 0;
-  color: #777;
+  color: #999;
 }
 
 .footer-credit {
   font-size: 9px;
   margin: 0;
-  color: #555;
+  color: #777;
 }
 
 .footer-link {
   font-size: 9px;
-  color: #4a9eff;
+  color: #5ba3ff;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .footer-link:hover {
-  color: #6bb3ff;
+  color: #7bb3ff;
   text-decoration: underline;
 }

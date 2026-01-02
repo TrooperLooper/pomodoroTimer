@@ -39,14 +39,14 @@ export default function App(): React.ReactElement {
         </div>
         <PillRow completedSteps={completedSteps} />
         <StarsRow completedSets={completedSets} />
-        <footer className="app-footer">
-          <p className="footer-title">MAGIC WORKDAY TIMER</p>
-          <p className="footer-credit">made by Lars Munck 2025 ©</p>
-          <a href="https://github.com/TrooperLooper/magic-workday-timer" target="_blank" rel="noopener noreferrer" className="footer-link">
-            GitHub repo
-          </a>
-        </footer>
       </div>
+      <footer className="app-footer">
+        <p className="footer-title">MAGIC WORKDAY TIMER</p>
+        <p className="footer-credit">made by Lars Munck 2025 ©</p>
+        <a href="https://github.com/TrooperLooper/magic-workday-timer" target="_blank" rel="noopener noreferrer" className="footer-link">
+          GitHub repo
+        </a>
+      </footer>
     </div>
   );
 }
