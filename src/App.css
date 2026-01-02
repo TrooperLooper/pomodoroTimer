@@ -74,7 +74,7 @@
 .center-button:disabled {
   opacity: 0.7;
   cursor: default;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 4px rgba(100, 180, 255, 0.8);
 }
 
 /* Pulse animation when timer is running */
@@ -198,16 +198,16 @@
 
 /* ===== FOOTER STYLES ===== */
 .app-footer {
-  position: absolute;
-  bottom: 20px;
+  position: fixed;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
   text-align: center;
-  z-index: 10;
+  z-index: 100;
 }
 
 .footer-title {
