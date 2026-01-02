@@ -5,20 +5,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
   padding: 0;
   background: #000;
 }
 
-/* Timer Wrapper - Scales based on viewport */
+/* Timer Wrapper - Scales based on viewport, tight around content */
 .timer-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   transform-origin: center;
   transform: scale(1);
+  width: fit-content;
+  height: fit-content;
 }
 
 /* Timer Container */
@@ -71,6 +73,7 @@
 .center-button:disabled {
   opacity: 0.7;
   cursor: default;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
 }
 
 /* Pulse animation when timer is running */
@@ -190,4 +193,42 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* ===== FOOTER STYLES ===== */
+.app-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 10px;
+  color: #666;
+}
+
+.footer-title {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #777;
+}
+
+.footer-credit {
+  font-size: 9px;
+  margin: 0;
+  color: #555;
+}
+
+.footer-link {
+  font-size: 9px;
+  color: #4a9eff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #6bb3ff;
+  text-decoration: underline;
 }
